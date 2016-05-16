@@ -1,0 +1,19 @@
+PODS:
+  - AsyncSwift (1.7.2)
+  - Cent (5.0.0):
+    - Dollar (~> 5.0.0)
+  - Dollar (5.0.0)
+
+DEPENDENCIES:
+  - AsyncSwift
+  - Cent (~> 5.0.0)
+  - Dollar (~> 5.0.0)
+
+SPEC CHECKSUMS:
+  AsyncSwift: 46a78bceb11f0e5bb52747f740d9692ec78d2d7c
+  Cent: 4bfbe6037d911c0491425ae1ff8057404050fbb2
+  Dollar: 310893dd6b3799b9b155e3deb61a0492987e4d03
+
+PODFILE CHECKSUM: 75ce8b3b142721e83446bb1b446406f326e41e79
+
+COCOAPODS: 1.0.0

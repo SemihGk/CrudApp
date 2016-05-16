@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		287CA1851CE6736300175195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CA1841CE6736300175195 /* AppDelegate.swift */; };
+		287CA1871CE6736300175195 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CA1861CE6736300175195 /* ViewController.swift */; };
+		287CA18A1CE6736300175195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287CA1881CE6736300175195 /* Main.storyboard */; };
+		287CA18C1CE6736300175195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 287CA18B1CE6736300175195 /* Assets.xcassets */; };
+		287CA18F1CE6736300175195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287CA18D1CE6736300175195 /* LaunchScreen.storyboard */; };
+		287CA19A1CE6736300175195 /* DiceUp_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CA1991CE6736300175195 /* DiceUp_Tests.swift */; };
+		287CA1A51CE6736300175195 /* DiceUp_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CA1A41CE6736300175195 /* DiceUp_UITests.swift */; };
+		287CA1B91CE6A5C500175195 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CA1B81CE6A5C500175195 /* CalculatorViewController.swift */; };
+		287CA1BD1CE6B0BE00175195 /* ATMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CA1BC1CE6B0BE00175195 /* ATMViewController.swift */; };
+		A3A10F1416F1A2C89DB5AAD1 /* Pods_DiceUp_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887B362CCC12B49AAF64436C /* Pods_DiceUp_.framework */; };
+		DD6A330162D490BB252443D2 /* Pods_DiceUp_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB739A0AD2B3D368AE2946BB /* Pods_DiceUp_Tests.framework */; };
+		EBE01735263BA00AE6C507F6 /* Pods_DiceUp_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD75E62883F7D81082049AE2 /* Pods_DiceUp_UITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		287CA1961CE6736300175195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 287CA1791CE6736300175195 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 287CA1801CE6736300175195;
+			remoteInfo = "DiceUp!";
+		};
+		287CA1A11CE6736300175195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 287CA1791CE6736300175195 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 287CA1801CE6736300175195;
+			remoteInfo = "DiceUp!";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		287CA1811CE6736300175195 /* DiceUp!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DiceUp!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		287CA1841CE6736300175195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		287CA1861CE6736300175195 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		287CA1891CE6736300175195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		287CA18B1CE6736300175195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		287CA18E1CE6736300175195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		287CA1901CE6736300175195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		287CA1951CE6736300175195 /* DiceUp!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DiceUp!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		287CA1991CE6736300175195 /* DiceUp_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceUp_Tests.swift; sourceTree = "<group>"; };
+		287CA19B1CE6736300175195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		287CA1A01CE6736300175195 /* DiceUp!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DiceUp!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		287CA1A41CE6736300175195 /* DiceUp_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceUp_UITests.swift; sourceTree = "<group>"; };
+		287CA1A61CE6736300175195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		287CA1B31CE677D800175195 /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		287CA1B81CE6A5C500175195 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		287CA1BC1CE6B0BE00175195 /* ATMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMViewController.swift; sourceTree = "<group>"; };
+		33BB6AC23EF71BD8E1A17D1A /* Pods-DiceUp!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceUp!.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiceUp!/Pods-DiceUp!.release.xcconfig"; sourceTree = "<group>"; };
+		4642F53DC99F53D588CAF63D /* Pods-DiceUp!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceUp!.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiceUp!/Pods-DiceUp!.debug.xcconfig"; sourceTree = "<group>"; };
+		49E48EA498DAD8C6195084C1 /* Pods-DiceUp!Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceUp!Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiceUp!Tests/Pods-DiceUp!Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		887B362CCC12B49AAF64436C /* Pods_DiceUp_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiceUp_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A3C5E88A7FE44CCAD83C33 /* Pods-DiceUp!Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceUp!Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiceUp!Tests/Pods-DiceUp!Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AD75E62883F7D81082049AE2 /* Pods_DiceUp_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiceUp_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6CFEFA47E6E03B3EB2481C3 /* Pods-DiceUp!UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceUp!UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiceUp!UITests/Pods-DiceUp!UITests.release.xcconfig"; sourceTree = "<group>"; };
+		EB739A0AD2B3D368AE2946BB /* Pods_DiceUp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiceUp_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF15EB3B3C328461F85644BA /* Pods-DiceUp!UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceUp!UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiceUp!UITests/Pods-DiceUp!UITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		287CA17E1CE6736300175195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A10F1416F1A2C89DB5AAD1 /* Pods_DiceUp_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		287CA1921CE6736300175195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD6A330162D490BB252443D2 /* Pods_DiceUp_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		287CA19D1CE6736300175195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE01735263BA00AE6C507F6 /* Pods_DiceUp_UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CB7EC38772FB5186A49D741 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4642F53DC99F53D588CAF63D /* Pods-DiceUp!.debug.xcconfig */,
+				33BB6AC23EF71BD8E1A17D1A /* Pods-DiceUp!.release.xcconfig */,
+				49E48EA498DAD8C6195084C1 /* Pods-DiceUp!Tests.debug.xcconfig */,
+				A9A3C5E88A7FE44CCAD83C33 /* Pods-DiceUp!Tests.release.xcconfig */,
+				EF15EB3B3C328461F85644BA /* Pods-DiceUp!UITests.debug.xcconfig */,
+				B6CFEFA47E6E03B3EB2481C3 /* Pods-DiceUp!UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		287CA1781CE6736300175195 = {
+			isa = PBXGroup;
+			children = (
+				287CA1B31CE677D800175195 /* bridge.h */,
+				287CA1831CE6736300175195 /* DiceUp! */,
+				287CA1981CE6736300175195 /* DiceUp!Tests */,
+				287CA1A31CE6736300175195 /* DiceUp!UITests */,
+				287CA1821CE6736300175195 /* Products */,
+				1CB7EC38772FB5186A49D741 /* Pods */,
+				94B5B13AD982CD0A38183EBE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		287CA1821CE6736300175195 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				287CA1811CE6736300175195 /* DiceUp!.app */,
+				287CA1951CE6736300175195 /* DiceUp!Tests.xctest */,
+				287CA1A01CE6736300175195 /* DiceUp!UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		287CA1831CE6736300175195 /* DiceUp! */ = {
+			isa = PBXGroup;
+			children = (
+				287CA1841CE6736300175195 /* AppDelegate.swift */,
+				287CA1861CE6736300175195 /* ViewController.swift */,
+				287CA1881CE6736300175195 /* Main.storyboard */,
+				287CA18B1CE6736300175195 /* Assets.xcassets */,
+				287CA18D1CE6736300175195 /* LaunchScreen.storyboard */,
+				287CA1901CE6736300175195 /* Info.plist */,
+				287CA1B81CE6A5C500175195 /* CalculatorViewController.swift */,
+				287CA1BC1CE6B0BE00175195 /* ATMViewController.swift */,
+			);
+			path = "DiceUp!";
+			sourceTree = "<group>";
+		};
+		287CA1981CE6736300175195 /* DiceUp!Tests */ = {
+			isa = PBXGroup;
+			children = (
+				287CA1991CE6736300175195 /* DiceUp_Tests.swift */,
+				287CA19B1CE6736300175195 /* Info.plist */,
+			);
+			path = "DiceUp!Tests";
+			sourceTree = "<group>";
+		};
+		287CA1A31CE6736300175195 /* DiceUp!UITests */ = {
+			isa = PBXGroup;
+			children = (
+				287CA1A41CE6736300175195 /* DiceUp_UITests.swift */,
+				287CA1A61CE6736300175195 /* Info.plist */,
+			);
+			path = "DiceUp!UITests";
+			sourceTree = "<group>";
+		};
+		94B5B13AD982CD0A38183EBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				887B362CCC12B49AAF64436C /* Pods_DiceUp_.framework */,
+				EB739A0AD2B3D368AE2946BB /* Pods_DiceUp_Tests.framework */,
+				AD75E62883F7D81082049AE2 /* Pods_DiceUp_UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		287CA1801CE6736300175195 /* DiceUp! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 287CA1A91CE6736300175195 /* Build configuration list for PBXNativeTarget "DiceUp!" */;
+			buildPhases = (
+				0E194D9E894D3CD3027FCCB6 /* 📦 Check Pods Manifest.lock */,
+				287CA17D1CE6736300175195 /* Sources */,
+				287CA17E1CE6736300175195 /* Frameworks */,
+				287CA17F1CE6736300175195 /* Resources */,
+				9C12E5DDDBA2C8E293FC765F /* 📦 Embed Pods Frameworks */,
+				0EF014BF9D281AE225C9BA4B /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DiceUp!";
+			productName = "DiceUp!";
+			productReference = 287CA1811CE6736300175195 /* DiceUp!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		287CA1941CE6736300175195 /* DiceUp!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 287CA1AC1CE6736300175195 /* Build configuration list for PBXNativeTarget "DiceUp!Tests" */;
+			buildPhases = (
+				8EEF9477004801C20E23085B /* 📦 Check Pods Manifest.lock */,
+				287CA1911CE6736300175195 /* Sources */,
+				287CA1921CE6736300175195 /* Frameworks */,
+				287CA1931CE6736300175195 /* Resources */,
+				D90D3DD0BA59EBA4956A3BCA /* 📦 Embed Pods Frameworks */,
+				C4C0721C550AAAD695DA0279 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				287CA1971CE6736300175195 /* PBXTargetDependency */,
+			);
+			name = "DiceUp!Tests";
+			productName = "DiceUp!Tests";
+			productReference = 287CA1951CE6736300175195 /* DiceUp!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		287CA19F1CE6736300175195 /* DiceUp!UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 287CA1AF1CE6736300175195 /* Build configuration list for PBXNativeTarget "DiceUp!UITests" */;
+			buildPhases = (
+				64E11D41163851E6033455AD /* 📦 Check Pods Manifest.lock */,
+				287CA19C1CE6736300175195 /* Sources */,
+				287CA19D1CE6736300175195 /* Frameworks */,
+				287CA19E1CE6736300175195 /* Resources */,
+				7AF00BAF6765CC708BB4CE87 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				287CA1A21CE6736300175195 /* PBXTargetDependency */,
+			);
+			name = "DiceUp!UITests";
+			productName = "DiceUp!UITests";
+			productReference = 287CA1A01CE6736300175195 /* DiceUp!UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		287CA1791CE6736300175195 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Semih Gokceoglu";
+				TargetAttributes = {
+					287CA1801CE6736300175195 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					287CA1941CE6736300175195 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 287CA1801CE6736300175195;
+					};
+					287CA19F1CE6736300175195 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 287CA1801CE6736300175195;
+					};
+				};
+			};
+			buildConfigurationList = 287CA17C1CE6736300175195 /* Build configuration list for PBXProject "DiceUp!" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 287CA1781CE6736300175195;
+			productRefGroup = 287CA1821CE6736300175195 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				287CA1801CE6736300175195 /* DiceUp! */,
+				287CA1941CE6736300175195 /* DiceUp!Tests */,
+				287CA19F1CE6736300175195 /* DiceUp!UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		287CA17F1CE6736300175195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287CA18F1CE6736300175195 /* LaunchScreen.storyboard in Resources */,
+				287CA18C1CE6736300175195 /* Assets.xcassets in Resources */,
+				287CA18A1CE6736300175195 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		287CA1931CE6736300175195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		287CA19E1CE6736300175195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E194D9E894D3CD3027FCCB6 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0EF014BF9D281AE225C9BA4B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiceUp!/Pods-DiceUp!-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64E11D41163851E6033455AD /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7AF00BAF6765CC708BB4CE87 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiceUp!UITests/Pods-DiceUp!UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EEF9477004801C20E23085B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C12E5DDDBA2C8E293FC765F /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiceUp!/Pods-DiceUp!-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4C0721C550AAAD695DA0279 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiceUp!Tests/Pods-DiceUp!Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D90D3DD0BA59EBA4956A3BCA /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiceUp!Tests/Pods-DiceUp!Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		287CA17D1CE6736300175195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287CA1871CE6736300175195 /* ViewController.swift in Sources */,
+				287CA1B91CE6A5C500175195 /* CalculatorViewController.swift in Sources */,
+				287CA1851CE6736300175195 /* AppDelegate.swift in Sources */,
+				287CA1BD1CE6B0BE00175195 /* ATMViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		287CA1911CE6736300175195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287CA19A1CE6736300175195 /* DiceUp_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		287CA19C1CE6736300175195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287CA1A51CE6736300175195 /* DiceUp_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		287CA1971CE6736300175195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 287CA1801CE6736300175195 /* DiceUp! */;
+			targetProxy = 287CA1961CE6736300175195 /* PBXContainerItemProxy */;
+		};
+		287CA1A21CE6736300175195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 287CA1801CE6736300175195 /* DiceUp! */;
+			targetProxy = 287CA1A11CE6736300175195 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		287CA1881CE6736300175195 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				287CA1891CE6736300175195 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		287CA18D1CE6736300175195 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				287CA18E1CE6736300175195 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		287CA1A71CE6736300175195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		287CA1A81CE6736300175195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		287CA1AA1CE6736300175195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4642F53DC99F53D588CAF63D /* Pods-DiceUp!.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "DiceUp!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NERD.DiceUp-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		287CA1AB1CE6736300175195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33BB6AC23EF71BD8E1A17D1A /* Pods-DiceUp!.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "DiceUp!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NERD.DiceUp-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		287CA1AD1CE6736300175195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49E48EA498DAD8C6195084C1 /* Pods-DiceUp!Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "DiceUp!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NERD.DiceUp-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiceUp!.app/DiceUp!";
+			};
+			name = Debug;
+		};
+		287CA1AE1CE6736300175195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9A3C5E88A7FE44CCAD83C33 /* Pods-DiceUp!Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "DiceUp!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NERD.DiceUp-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiceUp!.app/DiceUp!";
+			};
+			name = Release;
+		};
+		287CA1B01CE6736300175195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF15EB3B3C328461F85644BA /* Pods-DiceUp!UITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "DiceUp!UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NERD.DiceUp-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "DiceUp!";
+			};
+			name = Debug;
+		};
+		287CA1B11CE6736300175195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6CFEFA47E6E03B3EB2481C3 /* Pods-DiceUp!UITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "DiceUp!UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NERD.DiceUp-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "DiceUp!";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		287CA17C1CE6736300175195 /* Build configuration list for PBXProject "DiceUp!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287CA1A71CE6736300175195 /* Debug */,
+				287CA1A81CE6736300175195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		287CA1A91CE6736300175195 /* Build configuration list for PBXNativeTarget "DiceUp!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287CA1AA1CE6736300175195 /* Debug */,
+				287CA1AB1CE6736300175195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		287CA1AC1CE6736300175195 /* Build configuration list for PBXNativeTarget "DiceUp!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287CA1AD1CE6736300175195 /* Debug */,
+				287CA1AE1CE6736300175195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		287CA1AF1CE6736300175195 /* Build configuration list for PBXNativeTarget "DiceUp!UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287CA1B01CE6736300175195 /* Debug */,
+				287CA1B11CE6736300175195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 287CA1791CE6736300175195 /* Project object */;
+}
