@@ -30,6 +30,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var thirdTextBox: UITextField!
     @IBOutlet weak var secondTextBox: UITextField!
     
+    // displary aler message
+    func displayAlertMessage(msg: String) {
+        let alertController = UIAlertController(title: "Warning!", message:
+            msg, preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
     //change options area text
     func changeText(text: String) {
         print(text)
@@ -55,10 +64,10 @@ class ViewController: UIViewController {
         fourthNumber = Int(self.fourthTextBox.text!)
         
         if(firstNumber == nil || secondNumber == nil) {
-            self.changeText("Invalid numbers are detected!");
+            displayAlertMessage("Invalid numbers are detected!");
         } else if (thirdTextBox.hidden == false &&
             (thirdNumber == nil || fourthNumber == nil)) {
-            self.changeText("Please enter correct entries for second fraction")
+            displayAlertMessage("Please enter correct entries for second fraction")
         } else {
             // Enable result process
             if (thirdTextBox.hidden) {

@@ -44,9 +44,22 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NI9-rE-sV7">
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NI9-rE-sV7">
                                 <rect key="frame" x="164" y="240" width="64" height="30"/>
-                                <state key="normal" title="Calculate"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.174486237628523" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="0.75" y="0.0" width="1" height="1"/>
+                                <size key="titleShadowOffset" width="5" height="0.0"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KFP-Du-RUA"/>
                                 </connections>
@@ -212,16 +225,6 @@
                                     <rect key="frame" x="45" y="301" width="236" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAp-aH-6wi">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="45" y="398" width="77" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="onButtonClick:" destination="tVi-JM-iYC" eventType="touchUpInside" id="678-4E-3hr"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dcK-i3-FcQ">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -239,6 +242,22 @@
                                     <rect key="frame" x="47" y="337" width="253" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAp-aH-6wi">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.45754874832767245" green="1" blue="0.48841823446481947" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="41" y="409" width="77" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onButtonClick:" destination="tVi-JM-iYC" eventType="touchUpInside" id="678-4E-3hr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -248,9 +267,9 @@
                                 <exclude reference="itI-8i-VQZ"/>
                                 <exclude reference="NRk-uW-naB"/>
                                 <exclude reference="4jH-bS-S2K"/>
-                                <exclude reference="tAp-aH-6wi"/>
                                 <exclude reference="dcK-i3-FcQ"/>
                                 <exclude reference="gQg-gE-Nmq"/>
+                                <exclude reference="tAp-aH-6wi"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -260,9 +279,9 @@
                                 <include reference="itI-8i-VQZ"/>
                                 <include reference="NRk-uW-naB"/>
                                 <include reference="4jH-bS-S2K"/>
-                                <include reference="tAp-aH-6wi"/>
                                 <include reference="dcK-i3-FcQ"/>
                                 <include reference="gQg-gE-Nmq"/>
+                                <include reference="tAp-aH-6wi"/>
                             </mask>
                         </variation>
                     </view>
@@ -323,7 +342,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="+"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="89" y="202" width="61" height="30"/>
+                                    <rect key="frame" x="89" y="202" width="56" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="onSumButtonClick:" destination="tfg-Pw-DGC" eventType="touchUpInside" id="bQ1-Wu-KbM"/>
@@ -359,15 +378,6 @@
                                     <action selector="onDevideButtonClick:" destination="tfg-Pw-DGC" eventType="touchUpInside" id="TBP-ko-bvf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqQ-of-uxi">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="89" y="293" width="232" height="86"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter numbers first" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9c-pz-gwT">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -399,6 +409,15 @@
                                     <action selector="onEditingChanged:" destination="tfg-Pw-DGC" eventType="editingChanged" id="Qzk-a1-Y6h"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqQ-of-uxi">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="105" y="317" width="244" height="98"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -410,10 +429,10 @@
                                 <exclude reference="lZN-9g-HWw"/>
                                 <exclude reference="5Z0-X8-kYa"/>
                                 <exclude reference="Ume-OK-qDR"/>
-                                <exclude reference="MqQ-of-uxi"/>
                                 <exclude reference="z9c-pz-gwT"/>
                                 <exclude reference="eRL-s1-AKr"/>
                                 <exclude reference="aUg-xi-TD8"/>
+                                <exclude reference="MqQ-of-uxi"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -425,10 +444,10 @@
                                 <include reference="lZN-9g-HWw"/>
                                 <include reference="5Z0-X8-kYa"/>
                                 <include reference="Ume-OK-qDR"/>
-                                <include reference="MqQ-of-uxi"/>
                                 <include reference="z9c-pz-gwT"/>
                                 <include reference="eRL-s1-AKr"/>
                                 <include reference="aUg-xi-TD8"/>
+                                <include reference="MqQ-of-uxi"/>
                             </mask>
                         </variation>
                     </view>
@@ -448,9 +467,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="8JH-9W-Tg7"/>
         <segue reference="5vJ-Y6-m0w"/>
         <segue reference="thT-R5-oeV"/>
-        <segue reference="8JH-9W-Tg7"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

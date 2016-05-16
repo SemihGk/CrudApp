@@ -21,6 +21,15 @@ class ATMViewController: UIViewController {
     @IBOutlet weak var buttonView: UIButton!
     @IBOutlet weak var header: UILabel!
     
+    // displary aler message 
+    func displayAlertMessage(msg: String) {
+        let alertController = UIAlertController(title: "Warning!", message:
+            msg, preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
     // initializated picker value
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
@@ -45,7 +54,8 @@ class ATMViewController: UIViewController {
                 balance += savedMoney
                 textView.text = "Congrats! \n You saved money! \n Your balance: \(balance)"
             } else {
-                textView.text = "Oops! \n Please check your entry! \n Your balance: \(balance)"
+                displayAlertMessage("Oops! \n Please check your entry!");
+                textView.text = "Your balance: \(balance)"
             }
             break;
             
@@ -62,7 +72,9 @@ class ATMViewController: UIViewController {
                 }
                 
             } else {
-                textView.text = "Oops! \n Please check your entry! \n Your balance: \(balance)"
+                displayAlertMessage("Oops! \n Please check your entry!");
+
+                textView.text = "Your balance: \(balance)"
             }
             break;
             
@@ -93,6 +105,7 @@ class ATMViewController: UIViewController {
             self.buttonView.setTitle("Withdraw", forState: .Normal)
         default:
             self.infoText.text = "Something went wrong"
+            displayAlertMessage("Oops! \n Something went wrong!");
         }
         
     }
