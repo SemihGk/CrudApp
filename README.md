@@ -1,4 +1,4 @@
-# CrupApp
+# CrudApp
 simple swift application
 
 ## Requirements
